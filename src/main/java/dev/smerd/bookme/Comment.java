@@ -17,6 +17,8 @@ public class Comment {
     private String commentBody;
     private int upvotes;
 
+    // custom constructor that takes just body because objectId auto generated and has @Allargsconstructor
+    // and @NoArgsconstructor
     public Comment(String commentBody) {
         this.commentBody = commentBody;
     }
