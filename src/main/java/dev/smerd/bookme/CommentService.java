@@ -33,6 +33,12 @@ public class CommentService {
                 .matching(Criteria.where("id").is(commentId))
                 .apply(new Update().inc("upvotes", 1))
                 .first();
-//        return Comment;
+    }
+
+    public void downvote(ObjectId commentId) {
+        mongoTemplate.update(Comment.class)
+                .matching(Criteria.where("id").is(commentId))
+                .apply(new Update().inc("upvotes", -1))
+                .first();
     }
 }

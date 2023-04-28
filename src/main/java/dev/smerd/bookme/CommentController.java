@@ -24,4 +24,9 @@ public class CommentController {
     public void upvoteComment(@PathVariable ObjectId commentId) {
         commentService.upvote(commentId);
     }
+
+    @PostMapping("downvote/{commentId}")
+    public void downvoteComment(@PathVariable ObjectId commentId) {
+        commentService.downvote(commentId);
+    }
 }
