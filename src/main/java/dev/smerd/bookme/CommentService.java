@@ -41,4 +41,9 @@ public class CommentService {
                 .apply(new Update().inc("upvotes", -1))
                 .first();
     }
+
+//    using the regular mongoRepository dependency injection for simple delete operation
+    public void deleteComment(ObjectId commentId) {
+        commentRepository.deleteById(commentId);
+    }
 }

@@ -20,6 +20,11 @@ public class CommentController {
         return new ResponseEntity<Comment>(commentService.createComment(payload.get("commentBody"), payload.get("bookId")), HttpStatus.CREATED);
     }
 
+    @DeleteMapping("/{commentId}")
+    public void deleteComment(@PathVariable ObjectId commentId) {
+        commentService.deleteComment(commentId);
+    }
+
     @PostMapping("upvote/{commentId}")
     public void upvoteComment(@PathVariable ObjectId commentId) {
         commentService.upvote(commentId);
