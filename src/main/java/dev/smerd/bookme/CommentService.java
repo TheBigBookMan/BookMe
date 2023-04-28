@@ -1,6 +1,5 @@
 package dev.smerd.bookme;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
@@ -15,7 +14,7 @@ public class CommentService {
     // template is a more specific query to the database that requires more complex logic
     @Autowired
     private MongoTemplate mongoTemplate;
-    public Comment createComment(String commentBody, ObjectId bookId) {
+    public Comment createComment(String commentBody, String bookId) {
         //   this is creating a new comment by using the reviewRepository mongo function of insert
         Comment comment = commentRepository.insert(new Comment(commentBody));
 

@@ -16,6 +16,7 @@ public class Comment {
     private ObjectId id;
     private String commentBody;
     private int upvotes;
+    private String bookId;
 
     // custom constructor that takes just body because objectId auto generated and has @Allargsconstructor
     // and @NoArgsconstructor
