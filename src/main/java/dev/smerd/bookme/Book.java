@@ -29,7 +29,7 @@ public class Book {
     private String description;
     private String image;
     private String publishedDate;
-    private boolean rating;
+    private double rating;
     private String subtitle;
     //    from the Comment class-- one-to-many relationship
 //    @DocumentReference references the Comment class through mongodb
