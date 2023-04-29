@@ -1,5 +1,11 @@
+import Header from "./components/Header/Header";
+
 function App() {
-    return <></>;
+    return (
+        <div className="h-screen w-screen">
+            <Header />
+        </div>
+    );
 }
 
 export default App;
