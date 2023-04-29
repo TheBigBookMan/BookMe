@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="29917cc5-d9c9-485d-a5bb-943402d453d7" name="Changes" comment="add in delete comment functionality to the comment service and comment controller">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookmeApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/Comment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/CommentController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/CommentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/CommentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dev/smerd/bookme/BookmeApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2OwfirMqLXBVJCU2rIC1HB1JEyl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/bsmer/OneDrive/Documents/Benjamin/Java/bookme",
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="29917cc5-d9c9-485d-a5bb-943402d453d7" name="Changes" comment="" />
+      <created>1682476697594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682476697594</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add in mongodb link">
+      <created>1682478557792</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682478557792</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add in a Book class model with properties">
+      <created>1682592324480</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682592324480</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added in the comment class and added in properties">
+      <created>1682592492246</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682592492246</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add in the book repository which extends the mongo repository">
+      <created>1682595155839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1682595155839</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add in the comment repository which extends the mongo repository">
+      <created>1682595241490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682595241490</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add in bookservice component injected with the bookrespository">
+      <created>1682596430875</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1682596430875</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add in comment service component with dependency injection from the mongoTemplate">
+      <created>1682642082802</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1682642082802</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed bug related to model property incorrect">
+      <created>1682643078279</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682643078279</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add in book controller component with get functionality for all books">
+      <created>1682643123217</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1682643123217</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add in the book controller the functionality to get singular book by ObjectId">
+      <created>1682643792049</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682643792049</updated>
+    </task>
+    <task id="LOCAL-00011" summary="added in the comment controller with a post request to create a comment">
+      <created>1682659429096</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1682659429096</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fix bug for bookId when creating a comment">
+      <created>1682674575255</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682674575255</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add in upvote functionality to the comment service and comment controller">
+      <created>1682723672517</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682723672517</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add in downvote functionality to the comment service and comment controller">
+      <created>1682723882617</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682723882617</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add in delete comment functionality to the comment service and comment controller">
+      <created>1682724572745</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1682724572745</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add in mongodb link" />
+    <MESSAGE value="add in a Book class model with properties" />
+    <MESSAGE value="added in the comment class and added in properties" />
+    <MESSAGE value="add in the book repository which extends the mongo repository" />
+    <MESSAGE value="add in the comment repository which extends the mongo repository" />
+    <MESSAGE value="add in bookservice component injected with the bookrespository" />
+    <MESSAGE value="add in comment service component with dependency injection from the mongoTemplate" />
+    <MESSAGE value="fixed bug related to model property incorrect" />
+    <MESSAGE value="add in book controller component with get functionality for all books" />
+    <MESSAGE value="add in the book controller the functionality to get singular book by ObjectId" />
+    <MESSAGE value="added in the comment controller with a post request to create a comment" />
+    <MESSAGE value="fix bug for bookId when creating a comment" />
+    <MESSAGE value="add in upvote functionality to the comment service and comment controller" />
+    <MESSAGE value="add in downvote functionality to the comment service and comment controller" />
+    <MESSAGE value="add in delete comment functionality to the comment service and comment controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="add in delete comment functionality to the comment service and comment controller" />
+  </component>
+</project>
