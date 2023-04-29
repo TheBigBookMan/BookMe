@@ -13,4 +13,10 @@ declare global {
         subtitle: string;
         commentIds: string[];
     }
+
+    interface Book {
+        id: string;
+        commentBody: string;
+        upvotes: number;
+    }
 }
