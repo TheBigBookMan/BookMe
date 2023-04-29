@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="29917cc5-d9c9-485d-a5bb-943402d453d7" name="Changes" comment="add in delete comment functionality to the comment service and comment controller">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/BookmeApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/Comment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/CommentController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/CommentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/smerd/bookme/CommentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/dev/smerd/bookme/BookmeApplicationTests.java" beforeDir="false" />
-    </list>
+    <list default="true" id="29917cc5-d9c9-485d-a5bb-943402d453d7" name="Changes" comment="added in server and client folder structure" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682724572745</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="added in server and client folder structure">
+      <created>1682743233490</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1682743233490</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,6 +200,7 @@
     <MESSAGE value="add in upvote functionality to the comment service and comment controller" />
     <MESSAGE value="add in downvote functionality to the comment service and comment controller" />
     <MESSAGE value="add in delete comment functionality to the comment service and comment controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="add in delete comment functionality to the comment service and comment controller" />
+    <MESSAGE value="added in server and client folder structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="added in server and client folder structure" />
   </component>
 </project>
