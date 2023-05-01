@@ -24,9 +24,9 @@ const Home = () => {
         <div className="h-full w-full p-4">
             <h1 className="font-bold">Book List</h1>
 
-            <ul className="flex flex-col gap-4 p-4">
+            <ul className="flex flex-wrap gap-4 p-4 justify-center">
                 {books.map((book) => (
-                    <li className="flex flex-col border-2 p-2 h-[460px] overflow-y-auto rounded-lg">
+                    <li className="flex flex-col border-2 p-2 h-[460px] max-w-[400px] overflow-y-auto rounded-lg">
                         <div className="flex gap-2">
                             <div className="flex flex-col gap-1 items-center">
                                 <img
