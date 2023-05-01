@@ -4,12 +4,13 @@ import axios from "axios";
 const Home = () => {
     const [books, setBooks] = useState<Book[]>([]);
 
-    const getData: void = async () => {
+    const getData = async (): Promise<void> => {
         try {
             const response = await axios.get(
                 "http://localhost:8090/api/v1/books"
             );
-            console.log(response);
+            const { data } = response;
+            setBooks(data);
         } catch (err) {
             console.log(err);
         }
