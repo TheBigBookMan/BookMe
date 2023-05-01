@@ -1,14 +1,12 @@
 import { useState, useEffect } from "react";
-import axios from "axios";
+import { api } from "./../utils/axios";
 
 const Home = () => {
     const [books, setBooks] = useState<Book[]>([]);
 
     const getData = async (): Promise<void> => {
         try {
-            const response = await axios.get(
-                "http://localhost:8090/api/v1/books"
-            );
+            const response = await api.get("/books");
             const { data } = response;
             setBooks(data);
         } catch (err) {
@@ -18,7 +16,7 @@ const Home = () => {
 
     useEffect(() => {
         getData();
-    });
+    }, []);
 
     return (
         <div>

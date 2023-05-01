@@ -17,7 +17,7 @@ public class BookmeApplication {
 	public WebMvcConfigurer configure() {
 		return new WebMvcConfigurer() {
 			public void addCorsMappings(CorsRegistry reg) {
-				reg.addMapping("/**").allowedOrigins("*");
+				reg.addMapping("/**").allowedOrigins("http://localhost:5173/").allowedMethods("GET", "PUT", "POST", "DELETE");
 			}
 		};
 	}
