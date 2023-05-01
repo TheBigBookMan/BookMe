@@ -21,12 +21,10 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="h-full w-full p-4">
-            <h1 className="font-bold">Book List</h1>
-
+        <div className="h-full w-full px-4">
             <ul className="flex flex-wrap gap-4 p-4 justify-center">
                 {books.map((book) => (
-                    <li className="flex flex-col border-2 p-2 h-[460px] max-w-[400px] overflow-y-auto rounded-lg">
+                    <li className="flex flex-col border-2 p-2 h-[460px] max-w-[400px] overflow-y-auto rounded-lg hover:bg-gray-200 cursor-pointer">
                         <div className="flex gap-2">
                             <div className="flex flex-col gap-1 items-center">
                                 <img
@@ -53,7 +51,7 @@ const Home = () => {
                                         <p>{book.commentIds.length}</p>
                                     </div>
                                     <div className="flex items-center justify-center">
-                                        <AiFillStar className="text-yellow-300" />
+                                        <AiFillStar className="text-yellow-400" />
                                         <p>{book.rating}</p>
                                     </div>
                                 </div>
