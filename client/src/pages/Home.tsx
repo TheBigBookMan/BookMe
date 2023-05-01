@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { api } from "./../utils/axios";
 import { BiCommentDetail } from "react-icons/bi";
 import { AiFillStar } from "react-icons/ai";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Home = () => {
     const [books, setBooks] = useState<Book[]>([]);
@@ -24,7 +25,10 @@ const Home = () => {
         <div className="h-full w-full px-4">
             <ul className="flex flex-wrap gap-4 p-4 justify-center">
                 {books.map((book) => (
-                    <li className="flex flex-col border-2 p-2 h-[460px] max-w-[400px] overflow-y-auto rounded-lg hover:bg-gray-200 cursor-pointer">
+                    <Link
+                        to={`/books/${book.id}`}
+                        className="flex flex-col border-2 p-2 h-[460px] max-w-[400px] overflow-y-auto rounded-lg hover:bg-gray-200 cursor-pointer"
+                    >
                         <div className="flex gap-2">
                             <div className="flex flex-col gap-1 items-center">
                                 <img
@@ -59,7 +63,7 @@ const Home = () => {
                             </div>
                         </div>
                         <p className="text-sm">{book.description}</p>
-                    </li>
+                    </Link>
                 ))}
             </ul>
         </div>
