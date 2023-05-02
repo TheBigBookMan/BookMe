@@ -15,6 +15,10 @@ declare global {
         commentIds: Comment[];
     }
 
+    interface CommentProps {
+        commentIds: Comment[];
+    }
+
     interface Comment {
         id: string;
         commentBody: string;

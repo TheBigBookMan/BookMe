@@ -1,4 +1,4 @@
-const Comments = (commentIds: Comment[]) => {
+const Comments = (commentIds: CommentProps) => {
     console.log(commentIds);
     return (
         <div>
