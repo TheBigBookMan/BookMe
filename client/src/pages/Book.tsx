@@ -17,7 +17,6 @@ const Book = () => {
         getBookData();
     }, [bookId]);
 
-    console.log(bookData);
     return (
         <div className="p-4">
             {!bookData ? (
