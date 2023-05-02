@@ -17,6 +17,7 @@ declare global {
 
     interface CommentProps {
         commentIds: Comment[];
+        bookId: string;
     }
 
     interface Comment {

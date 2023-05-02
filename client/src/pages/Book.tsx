@@ -46,7 +46,10 @@ const Book = () => {
                             {bookData.description}
                         </p>
                     </div>
-                    <Comments commentIds={bookData.commentIds} />
+                    <Comments
+                        commentIds={bookData.commentIds}
+                        bookId={bookData.bookId}
+                    />
                 </div>
             )}
         </div>

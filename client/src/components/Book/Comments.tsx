@@ -2,13 +2,25 @@ import { BsFillHandThumbsUpFill } from "react-icons/bs";
 import { MouseEvent, useState } from "react";
 import { api } from "../../utils/axios";
 
-const Comments = ({ commentIds }: CommentProps) => {
+const Comments = ({ commentIds, bookId }: CommentProps) => {
     const [commentBody, setCommentBody] = useState<string>("");
-
-    const postComment = (e: MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    console.log(commentIds);
+    console.log(bookId);
+    const postComment = async (
+        e: MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => {
         e.preventDefault();
         try {
-            console.log(commentBody);
+            const response = await api.post("/comments", {
+                commentBody,
+                bookId,
+            });
+            console.log(response);
+            if (response.status === 201) {
+                setCommentBody("");
+            } else {
+                throw new Error("Please try again...");
+            }
         } catch (err) {
             console.log(err);
         }
@@ -39,8 +51,11 @@ const Comments = ({ commentIds }: CommentProps) => {
                 <h1>No comments yet...</h1>
             ) : (
                 <ul className="flex flex-col gap-2 border-2 h-[400px] rounded-lg">
-                    {commentIds.map((comment) => (
-                        <li className="flex flex-col border-b h-[120px] p-1">
+                    {commentIds.map((comment, idx) => (
+                        <li
+                            key={idx}
+                            className="flex flex-col border-b h-[120px] p-1"
+                        >
                             <div className="flex gap-2 items-center ">
                                 <BsFillHandThumbsUpFill className="text-blue-500 cursor-pointer" />
                                 <p>{comment.upvotes}</p>
