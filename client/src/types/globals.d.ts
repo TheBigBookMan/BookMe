@@ -12,10 +12,10 @@ declare global {
         publishedDate: string;
         rating: number;
         subtitle: string;
-        commentIds: string[];
+        commentIds: Comment[];
     }
 
-    interface Book {
+    interface Comment {
         id: string;
         commentBody: string;
         upvotes: number;
