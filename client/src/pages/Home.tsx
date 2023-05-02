@@ -26,7 +26,7 @@ const Home = () => {
             <ul className="flex flex-wrap gap-4 p-4 justify-center">
                 {books.map((book) => (
                     <Link
-                        to={`/books/${book.id}`}
+                        to={`/book/${book._id}`}
                         className="flex flex-col border-2 p-2 h-[460px] max-w-[400px] overflow-y-auto rounded-lg hover:bg-gray-200 cursor-pointer"
                     >
                         <div className="flex gap-2">
