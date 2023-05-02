@@ -4,8 +4,7 @@ import { api } from "../../utils/axios";
 
 const Comments = ({ commentIds, bookId }: CommentProps) => {
     const [commentBody, setCommentBody] = useState<string>("");
-    console.log(commentIds);
-    console.log(bookId);
+
     const postComment = async (
         e: MouseEvent<HTMLButtonElement, MouseEvent>
     ) => {
@@ -15,7 +14,6 @@ const Comments = ({ commentIds, bookId }: CommentProps) => {
                 commentBody,
                 bookId,
             });
-            console.log(response);
             if (response.status === 201) {
                 setCommentBody("");
             } else {

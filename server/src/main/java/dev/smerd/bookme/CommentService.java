@@ -21,7 +21,7 @@ public class CommentService {
 
 //        this is updating the book with the new comment id
         mongoTemplate.update(Book.class)
-                .matching(Criteria.where("id").is(bookId))
+                .matching(Criteria.where("bookId").is(bookId))
                 .apply(new Update().push("commentIds").value(comment))
                 .first();
         return comment;
