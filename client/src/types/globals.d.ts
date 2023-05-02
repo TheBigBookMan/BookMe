@@ -26,5 +26,6 @@ declare global {
         commentId: string;
         commentBody: string;
         upvotes: number;
+        downvotes: number;
     }
 }

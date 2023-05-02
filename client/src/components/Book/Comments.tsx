@@ -1,4 +1,7 @@
-import { BsFillHandThumbsUpFill } from "react-icons/bs";
+import {
+    BsFillHandThumbsUpFill,
+    BsFillHandThumbsDownFill,
+} from "react-icons/bs";
 import { MouseEvent, useState } from "react";
 import { api } from "../../utils/axios";
 import { upvote } from "../../utils/api";
@@ -56,14 +59,28 @@ const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
                             key={idx}
                             className="flex flex-col border-b h-[120px] p-1"
                         >
-                            <div className="flex gap-2 items-center ">
-                                <BsFillHandThumbsUpFill
-                                    onClick={() =>
-                                        upvote(comment.commentId, "upvote")
-                                    }
-                                    className="text-blue-500 cursor-pointer"
-                                />
-                                <p>{comment.upvotes}</p>
+                            <div className="flex gap-4">
+                                <div className="flex gap-2 items-center ">
+                                    <BsFillHandThumbsUpFill
+                                        onClick={() =>
+                                            upvote(comment.commentId, "upvote")
+                                        }
+                                        className="text-blue-300 hover:text-blue-500 cursor-pointer"
+                                    />
+                                    <p>{comment.upvotes}</p>
+                                </div>
+                                <div className="flex gap-2 items-center ">
+                                    <BsFillHandThumbsDownFill
+                                        onClick={() =>
+                                            upvote(
+                                                comment.commentId,
+                                                "downvote"
+                                            )
+                                        }
+                                        className="text-blue-300 hover:text-blue-500 cursor-pointer"
+                                    />
+                                    <p>{comment.downvotes}</p>
+                                </div>
                             </div>
                             <p className="overflow-y-auto">
                                 {comment.commentBody}

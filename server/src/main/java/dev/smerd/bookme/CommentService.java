@@ -40,7 +40,7 @@ public class CommentService {
     public void downvote(UUID commentId) {
         mongoTemplate.update(Comment.class)
                 .matching(Criteria.where("commentId").is(commentId))
-                .apply(new Update().inc("upvotes", -1))
+                .apply(new Update().inc("downvotes", 1))
                 .first();
     }
 
