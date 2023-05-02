@@ -23,6 +23,7 @@ public class Book {
     //    @Id lets compiler know that objectId is reference to the id
     @Id
     private ObjectId id;
+    private String bookId;
     private String title;
     private List<String> authors;
     private List<String> categories;

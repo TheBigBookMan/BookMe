@@ -2,7 +2,8 @@ export {};
 
 declare global {
     interface Book {
-        _id: string;
+        id: string;
+        bookId: string;
         title: string;
         authors: string[];
         categories: string[];

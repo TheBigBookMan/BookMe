@@ -1,10 +1,12 @@
 package dev.smerd.bookme;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 import java.util.Optional;
@@ -33,7 +35,7 @@ public class BookController {
     @GetMapping("/{bookId}")
     //    @PathVariable lets the compiler know passing a path variable in as a parameter
 //    Optional<Movie> is in case the movie database doesnt match the imdbId
-    public ResponseEntity<Optional<Book>> getSingleBook(@PathVariable ObjectId bookId) {
+    public ResponseEntity<Optional<Book>> getSingleBook(@PathVariable String bookId) {
         return new ResponseEntity<Optional<Book>>(bookService.singleBook(bookId), HttpStatus.OK);
     }
 }

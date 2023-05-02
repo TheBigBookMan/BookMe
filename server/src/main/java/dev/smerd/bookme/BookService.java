@@ -1,6 +1,5 @@
 package dev.smerd.bookme;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,8 +21,8 @@ public class BookService {
 
 //    return singular book from database with ObjectId
 //    Optional<Book> in case there is no id that matches in database so can return null
-    public Optional<Book> singleBook(ObjectId id) {
-        return bookRepository.findById(id);
+    public Optional<Book> singleBook(String bookId) {
+        return bookRepository.findBookByBookId(bookId);
     }
 
 //    CAN ADD IN MORE BY CATEGORY, AUTHOR, TITLE etc
