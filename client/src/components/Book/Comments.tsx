@@ -2,9 +2,10 @@ import {
     BsFillHandThumbsUpFill,
     BsFillHandThumbsDownFill,
 } from "react-icons/bs";
+import { ImBin } from "react-icons/im";
 import { MouseEvent, useState } from "react";
 import { api } from "../../utils/axios";
-import { upvote } from "../../utils/api";
+import { upvote, deleteComment } from "../../utils/api";
 
 const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
     const [commentBody, setCommentBody] = useState<string>("");
@@ -59,7 +60,7 @@ const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
                             key={idx}
                             className="flex flex-col border-b h-[120px] p-1"
                         >
-                            <div className="flex gap-4">
+                            <div className="flex gap-4 items-center">
                                 <div className="flex gap-2 items-center ">
                                     <BsFillHandThumbsUpFill
                                         onClick={() =>
@@ -81,6 +82,12 @@ const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
                                     />
                                     <p>{comment.downvotes}</p>
                                 </div>
+                                <ImBin
+                                    onClick={() =>
+                                        deleteComment(comment.commentId)
+                                    }
+                                    className="hover:text-red-600 cursor-pointer"
+                                />
                             </div>
                             <p className="overflow-y-auto">
                                 {comment.commentBody}

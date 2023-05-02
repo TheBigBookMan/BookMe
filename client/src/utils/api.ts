@@ -10,3 +10,11 @@ export const upvote = async (
         console.log(err);
     }
 };
+
+export const deleteComment = async (commentId: string): Promise<void> => {
+    try {
+        await api.delete(`/comments/${commentId}`);
+    } catch (err) {
+        console.log(err);
+    }
+};

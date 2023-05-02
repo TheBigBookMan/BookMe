@@ -1,9 +1,9 @@
 package dev.smerd.bookme;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
@@ -45,7 +45,8 @@ public class CommentService {
     }
 
 //    using the regular mongoRepository dependency injection for simple delete operation
-    public void deleteComment(ObjectId commentId) {
-        commentRepository.deleteById(commentId);
+    public void deleteComment(UUID commentId) {
+        Query query = new Query(Criteria.where("commentId").is(commentId));
+        mongoTemplate.remove(query, Comment.class);
     }
 }

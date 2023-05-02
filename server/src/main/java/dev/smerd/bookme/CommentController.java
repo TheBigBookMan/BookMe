@@ -1,6 +1,5 @@
 package dev.smerd.bookme;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,8 +21,8 @@ public class CommentController {
     }
 
     @DeleteMapping("/{commentId}")
-    public void deleteComment(@PathVariable ObjectId id) {
-        commentService.deleteComment(id);
+    public void deleteComment(@PathVariable UUID commentId) {
+        commentService.deleteComment(commentId);
     }
 
     @PostMapping("upvote/{commentId}")
