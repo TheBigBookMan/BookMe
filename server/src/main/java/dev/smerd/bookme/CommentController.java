@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("api/v1/comments")
@@ -21,17 +22,17 @@ public class CommentController {
     }
 
     @DeleteMapping("/{commentId}")
-    public void deleteComment(@PathVariable ObjectId commentId) {
-        commentService.deleteComment(commentId);
+    public void deleteComment(@PathVariable ObjectId id) {
+        commentService.deleteComment(id);
     }
 
     @PostMapping("upvote/{commentId}")
-    public void upvoteComment(@PathVariable ObjectId commentId) {
+    public void upvoteComment(@PathVariable UUID commentId) {
         commentService.upvote(commentId);
     }
 
     @PostMapping("downvote/{commentId}")
-    public void downvoteComment(@PathVariable ObjectId commentId) {
+    public void downvoteComment(@PathVariable UUID commentId) {
         commentService.downvote(commentId);
     }
 }

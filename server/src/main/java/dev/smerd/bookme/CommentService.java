@@ -7,6 +7,8 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @Service
 public class CommentService {
     @Autowired
@@ -27,17 +29,17 @@ public class CommentService {
         return comment;
     }
 
-    public void upvote(ObjectId commentId) {
+    public void upvote(UUID commentId) {
 //        update the comment by adding one onto the upvotes tally
         mongoTemplate.update(Comment.class)
-                .matching(Criteria.where("id").is(commentId))
+                .matching(Criteria.where("commentId").is(commentId))
                 .apply(new Update().inc("upvotes", 1))
                 .first();
     }
 
-    public void downvote(ObjectId commentId) {
+    public void downvote(UUID commentId) {
         mongoTemplate.update(Comment.class)
-                .matching(Criteria.where("id").is(commentId))
+                .matching(Criteria.where("commentId").is(commentId))
                 .apply(new Update().inc("upvotes", -1))
                 .first();
     }
