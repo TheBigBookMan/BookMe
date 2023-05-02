@@ -49,6 +49,7 @@ const Book = () => {
                     <Comments
                         commentIds={bookData.commentIds}
                         bookId={bookData.bookId}
+                        getBookData={getBookData}
                     />
                 </div>
             )}

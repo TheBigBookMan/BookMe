@@ -2,7 +2,7 @@ import { BsFillHandThumbsUpFill } from "react-icons/bs";
 import { MouseEvent, useState } from "react";
 import { api } from "../../utils/axios";
 
-const Comments = ({ commentIds, bookId }: CommentProps) => {
+const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
     const [commentBody, setCommentBody] = useState<string>("");
 
     const postComment = async (
@@ -16,6 +16,7 @@ const Comments = ({ commentIds, bookId }: CommentProps) => {
             });
             if (response.status === 201) {
                 setCommentBody("");
+                getBookData();
             } else {
                 throw new Error("Please try again...");
             }
