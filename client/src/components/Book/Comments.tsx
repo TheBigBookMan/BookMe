@@ -1,6 +1,7 @@
 import { BsFillHandThumbsUpFill } from "react-icons/bs";
 import { MouseEvent, useState } from "react";
 import { api } from "../../utils/axios";
+import { upvote } from "../../utils/api";
 
 const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
     const [commentBody, setCommentBody] = useState<string>("");
@@ -56,7 +57,12 @@ const Comments = ({ commentIds, bookId, getBookData }: CommentProps) => {
                             className="flex flex-col border-b h-[120px] p-1"
                         >
                             <div className="flex gap-2 items-center ">
-                                <BsFillHandThumbsUpFill className="text-blue-500 cursor-pointer" />
+                                <BsFillHandThumbsUpFill
+                                    onClick={() =>
+                                        upvote(comment.commentId, "upvote")
+                                    }
+                                    className="text-blue-500 cursor-pointer"
+                                />
                                 <p>{comment.upvotes}</p>
                             </div>
                             <p className="overflow-y-auto">

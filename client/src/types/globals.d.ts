@@ -23,6 +23,7 @@ declare global {
 
     interface Comment {
         id: string;
+        commentId: string;
         commentBody: string;
         upvotes: number;
     }
